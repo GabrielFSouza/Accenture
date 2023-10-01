@@ -42,3 +42,5 @@ Siga os passos abaixo para ter acesso ao seu ambiente de desenvolvimento:
         ```
 
 5. Pressione `F5 ou Ctrl+F5` para rodar o projeto no seu navegador.
+
+6. Caso queira testar com um banco de dados em vazio, apague o arquivo fornecedores.db na pasta mvc e execute novamente o projeto.
