@@ -1,0 +1,61 @@
+@model IEnumerable<mvc.Models.FornecedorViewModel>
+
+@{
+    ViewData["Title"] = "Fornecedores empresa";
+}
+
+<h1>Fornecedores empresa</h1>
+
+<p>
+    <a asp-action="Novo" asp-controller="Fornecedor">Novo fornecedor</a>
+</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataCadastro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeEmpresa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CPFCNPJ)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RG)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataNascimento)
+            </th>
+            
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataCadastro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeEmpresa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CPFCNPJ)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RG)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataNascimento)
+            </td>
+            
+        </tr>
+}
+    </tbody>
+</table>
