@@ -3,7 +3,7 @@
    💻 **ACCENTURE TEST**
 <br>
 <br>
-   <img src="Accenture/fornecedores/mvc/img/fornecedores.png" width="65%" height="65%" align="center" valign="center"/>
+   <img src="mvc/img/fornecedores.png" width="65%" height="65%" align="center" valign="center"/>
 </div>
 <br>
 <br>
